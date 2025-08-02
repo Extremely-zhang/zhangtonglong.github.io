@@ -28,11 +28,17 @@
   margin: auto;
   color: white;
   font-family: '微软雅黑', Arial, sans-serif;
-  background: url('https://github.com/Extremely-zhang/zhangtonglong.github.io/raw/main/photo.png') no-repeat center center;
-  background-size: cover;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  overflow: hidden;
 ">
+  <img src="https://github.com/Extremely-zhang/zhangtonglong.github.io/raw/main/photo.png" alt="照片" style="
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 保持图片完整 */
+    display: block;
+    border-radius: 8px;
+  " />
   <div style="
     position: absolute;
     top: 50%;
@@ -66,6 +72,7 @@
     </div>
   </div>
 </header>
+
 
 <div class="contact" style="max-width: 900px; margin: 20px auto; font-family: '微软雅黑', Arial, sans-serif;">
   <h3>联系我 (Contact Me)</h3>
