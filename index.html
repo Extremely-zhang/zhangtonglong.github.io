@@ -24,6 +24,7 @@
   position: relative;
   width: 100%;
   max-width: 900px;
+  height: 600px; /* 加高，照片更大 */
   margin: auto;
   border-radius: 8px;
   overflow: hidden;
@@ -31,15 +32,12 @@
   font-family: '微软雅黑', Arial, sans-serif;
   color: white;
 ">
-  <!-- 图片部分 -->
   <img src="https://github.com/Extremely-zhang/zhangtonglong.github.io/raw/main/photo.png" alt="照片" style="
     width: 100%;
-    height: auto; /* 高度自适应 */
+    height: 100%; /* 让图片撑满header高度 */
+    object-fit: cover; /* 保持比例，裁剪图片填满 */
     display: block;
-    border-radius: 8px;
   " />
-
-  <!-- 文字遮罩层 -->
   <div style="
     position: absolute;
     top: 50%;
@@ -76,6 +74,7 @@
     </div>
   </div>
 </header>
+
   
 <div class="contact" style="max-width: 900px; margin: 20px auto; font-family: '微软雅黑', Arial, sans-serif;">
   <h3>联系我 (Contact Me)</h3>
